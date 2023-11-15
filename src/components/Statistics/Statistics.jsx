@@ -3,13 +3,11 @@ import CSS from './index.module.css';
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <div>
-      <p className={CSS.categoryName}>Good: {good}</p>
-      <p className={CSS.categoryName}>Neutral: {neutral}</p>
-      <p className={CSS.categoryName}>Bad: {bad}</p>
-      <p className={CSS.categoryName}>Total: {total}</p>
-      <p className={CSS.categoryName}>
-        Positive feedback: {positivePercentage}%
-      </p>
+      <p className={CSS.statName}>Good: {good}</p>
+      <p className={CSS.statName}>Neutral: {neutral}</p>
+      <p className={CSS.statName}>Bad: {bad}</p>
+      <p className={CSS.statName}>Total: {total}</p>
+      <p className={CSS.statName}>Positive feedback: {positivePercentage}%</p>
     </div>
   );
 };
